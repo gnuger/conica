@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/JavaScript" src="jscript.js"></script> 
+	<title>Conica by GNUger</title>
+</head>
+<body onload="init()">
+<div id="wrap">
+	<div id="header">
+		<h1>Conica HTML5</h1>
+		ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0
+	</div>
+	<div id="nav">
+		aa
+	</div>
+	<div id="main">
+		<canvas id="canvas" height="800" width="800"></canvas>
+	</div>
+	<div id="sidebar">
+		<h4>Values</h4>
+		<table>
+			<tr>
+				<td>a</td>
+				<td><input type="text" id="field_a"></td>
+			</tr>
+			<tr>
+				<td>h</td>
+				<td><input type="text" id="field_h"></td>
+			</tr>
+			<tr>
+				<td>b</td>
+				<td><input type="text" id="field_b"></td>
+			</tr>
+			<tr>
+				<td>g</td>
+				<td><input type="text" id="field_g"></td>
+			</tr>
+			<tr>
+				<td>f</td>
+				<td><input type="text" id="field_f"></td>
+			</tr>
+			<tr>
+				<td>c</td>
+				<td><input type="text" id="field_c"></td>
+			</tr>
+		</table>
+		<button type="button" onclick="plot();">Plot</button>
+		<button type="button" onclick="draw_axis();">Clear</button>
+		
+		<div id="tipbox">
+			<h4>General Curves Equations:</h4>
+			<ul>
+				<li>Line : <em>y = mx + c</em></li>
+				<li>Circle : <em>(x - a)<sup>2</sup> + (y - b)<sup>2</sup> = r<sup>2</sup></em></li>
+				<li>Parabola : <em>(y - k)<sup>2</sup> = 4p(x - h)</em></li>
+				<li>Ellipse : <em>x<sup>2</sup> / a<sup>2</sup> + y<sup>2</sup> / b<sup>2</sup> = 1</em></li>
+				<li>Hyperbola : <em>x<sup>2</sup> / a<sup>2</sup> - y<sup>2</sup> / b<sup>2</sup> = 1</em></li>
+			</ul>
+		</div>
+		
+		<div id="tipbox">
+			<h4>Properties of Quadratic Equation:</h4>
+			<p>
+			if a = b = 0 -&gt; Straight Line<br/>
+			if a = b != 0 -&gt; Circle<br/>
+			if D = 0 -&gt; Pair of Lines<br/>
+			Now for D != 0 & for Z :<br/>
+			= 0 -&gt; Parabola<br/>
+			&lt; 0 -&gt; Ellipse<br/>
+			&gt; 0 -&gt; Hyperbola<br/>
+			</p>
+			<p>
+			D = <em>abc + 2gh - af<sup>2</sup> - bg<sup>2</sup> - ch<sup>2</sup></em><br/>
+			Z = <em>h<sup>2</sup> - ab</em>
+			</p>
+		</div>
+		
+	</div>
+	<div id="footer">
+		<p>Designed by Anant Khaitan</p>
+	</div>
+
+</div>
+</body>
+</html>
