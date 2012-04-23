@@ -1,0 +1,12 @@
+Properties of Quadratic Equation:
+
+if a = b = 0 -> Straight Line
+if a = b != 0 -> Circle
+if D = 0 -> Pair of Lines
+Now for D != 0 & for Z :
+= 0 -> Parabola
+< 0 -> Ellipse
+> 0 -> Hyperbola
+
+D = abc + 2gh - af^2 - bg^2 - ch^2
+Z = h^2 - ab
